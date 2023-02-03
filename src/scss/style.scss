@@ -1,0 +1,115 @@
+ @import 'https://necolas.github.io/normalize.css/latest/normalize.css';
+
+@import 'header.scss';
+@import 'health.scss';
+@import 'sports.scss';
+@import 'about.scss';
+@import 'health-data.scss';
+
+@import 'footer.scss';
+
+@import 'popup.scss';
+
+
+
+
+html{
+  scroll-behavior: smooth;
+  background-color:#fff;
+  min-width: 1600px;
+}
+.wrapper{
+  margin: 0 auto;
+}
+ .btn{
+   background-color:#13AE92;
+   height: 50px;
+   width:150px;
+   border-radius: 8px;
+   font-size: 18px;
+   font-weight: 700;
+   color:#fff;
+ }
+ .hero{
+  background: #034457;
+  background:linear-gradient(#034457, rgba(255,255,255,.01));
+  height:100vh;
+  min-width: 1440px;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  overflow: hidden;
+  
+  
+  &__container{
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 90%;
+    gap: 20%;
+  }
+  &__logo{
+    text-transform: uppercase;
+    color:#073630;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+  }
+ &__left{
+  z-index: 4;
+    width:30%;
+    &-head{
+      font-weight: 700;
+      font-size: 50px;
+      color:#fff;
+    }
+    &-text{
+      font-weight: 400;
+      font-size: 16px;
+      color: #fff;
+      line-height: 160%;
+      opacity: .7;
+      margin-bottom: 40px;
+    }
+ }
+ &__right{
+  width: 30%;
+  text-align: center;
+  padding-top: 40px;
+  z-index: 2;
+  &-img{
+    z-index: 4;;
+  }
+  &-line{
+    position: absolute;
+    z-index: 1;
+    right: -5%;
+    top:auto;
+  }
+ }
+
+ &__main-line{
+  position: absolute;
+  width:108%;
+  top:78vh;
+  z-index: 1;
+  opacity:.1;
+ }
+
+ &__cube{
+  position: absolute;
+  top:90vh;
+  z-index: 2;
+  opacity: .4;
+ }
+ &__ring{
+  position: absolute;
+  top:80vh;
+  right: 3%;
+  z-index: 2;
+  opacity: .9;
+ }
+ }
+

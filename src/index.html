@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title": "Special offer!" })
+
+  <body>
+    <header class="header">@@include('html/header.html',{})</header>
+    <div class="wrapper">
+      <section class="hero">@@include('html/hero.html', {})</section>
+      <section class="sports">@@include('html/sports.html',{})</section>
+      <section class="health">@@include('html/health.html',{})</section>
+      <section class="heartrate about">
+        @@include('html/heartrate.html',{})
+      </section>
+      <section class="sleep about">@@include('html/sleep.html',{})</section>
+      <section class="breathing about">
+        @@include('html/breathing.html',{})
+      </section>
+      <section class="hdata">@@include('html/health-data.html',{})</section>
+    </div>
+
+    @@include('html/footer.html', {}) @@include('html/popup.html', {})
+    @@include('html/popup-2.html',{})
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

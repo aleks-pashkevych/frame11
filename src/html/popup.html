@@ -1,0 +1,105 @@
+<div id="popup" class="popup hidden">
+  <a href="#header" class="popup__area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="#header" class="popup__close closer">
+        <img src="@img/svg/close.svg" alt="X" width="20px" height="20px" />
+      </a>
+      <h1 class="popup__head">Please fill down the data.</h1>
+
+      <div class="popup__text">
+        <form action="subscribe" method="post" class="popup__form">
+          <label for="#popup__name" class="popup__label">
+            Name:
+            <input
+              type="text"
+              id="popup__name"
+              class="popup__form-input-text"
+              autocomplete="name"
+              minlength="4"
+              placeholder="Ivan"
+              required
+            />
+          </label>
+          <label for="#popup__f-name" class="popup__label">
+            Family Name:
+            <input
+              type="text"
+              id="popup__f-name"
+              class="popup__form-input-text"
+              autocomplete="family-name"
+              minlength="4"
+              placeholder="Ivanov"
+              required
+            />
+          </label>
+          <label for="popup__email" class="popup__label email"
+            >E-mail:
+            <input
+              type="email"
+              class="popup__form-input-email"
+              placeholder="example@example.expl"
+              required
+            />
+          </label>
+          <label for="popup__age" class="popup__label"
+            >Age:
+            <input
+              type="number"
+              name="p-age"
+              class="popup__form-age"
+              id="popup__age"
+              min="14"
+              max="160"
+              placeholder="62"
+            />
+            years.
+          </label>
+          <section class="popup__gender-section">
+            <label for="gender" class="popup__gender-section-label"
+              ><h2 class="popup__gender-section-head">Gender:</h2>
+              <!-- <br /> -->
+              <div class="popup__gender-section-cower">
+                <input
+                  type="radio"
+                  name="gender"
+                  id="popup__gender-male"
+                  value="Male"
+                />
+                <label
+                  for="popup__gender-male"
+                  class="popup__gender-section-label"
+                  >Male</label
+                ><br />
+                <input
+                  type="radio"
+                  name="gender"
+                  id="popup__gender-female"
+                  value="Female"
+                />
+                <label
+                  for="popup__gender-female"
+                  class="popup__gender-section-label"
+                  >Female</label
+                ><br />
+                <input
+                  type="radio"
+                  name="gender"
+                  id="popup__gender-not-sure"
+                  value="Not Sure"
+                  checked
+                />
+                <label
+                  for="popup__gender-not-sure"
+                  class="popup__gender-section-label"
+                  >Not Sure</label
+                ><br />
+              </div>
+            </label>
+          </section>
+          <input type="button" value="Subscribe" class="btn subscribe-btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
